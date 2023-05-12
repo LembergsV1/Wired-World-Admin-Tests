@@ -91,7 +91,7 @@ function Categories({swal}){
 
     return(
         <Layout>
-            <h1>Categories</h1>
+            <h1>Kategorijas</h1>
             <label>
             {editedCategory
                 ? `Rediģēt kategoriju ${editedCategory.name}`
@@ -168,7 +168,7 @@ function Categories({swal}){
                             <td>{category?.parent?.name}</td>
                             <button  
                               onClick={() => editCategory(category)}
-                              className="btn-primary mr-1">
+                              className="btn-primary mr-1 mb-1">
                                     Rediģēt
                             </button>
                             <button 
