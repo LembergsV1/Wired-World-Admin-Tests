@@ -18,7 +18,7 @@ export default function EditProductPage(){
     }, [id]);
     return (
         <Layout>
-            <h1>Rediģēt produktu</h1>
+            <h1>Rediģēt preci</h1>
             {productInfo && (
                 <ProductsForm {...productInfo}/>
             )}

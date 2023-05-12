@@ -89,7 +89,7 @@ export default function ProductsForm({
 
     return(
             <form onSubmit={saveProduct}>
-            <label>Produkta nosaukums</label>
+            <label>Preces nosaukums</label>
             <input 
                 type="text"
                 placeholder="Produkta nosaukums" 
@@ -150,7 +150,7 @@ export default function ProductsForm({
                     <div>Pašlaik nav neviena foto!</div>
                 )}
             </div>
-            <label>Produkta apraksts</label>
+            <label>Preces apraksts</label>
             <textarea  
                 placeholder="apraksts" 
                 value={description}

@@ -12,11 +12,11 @@ export default function Products() {
     }, [])
     return(
         <Layout>
-            <Link className="btn-primary" href={'/products/new'}>Pievienot jaunu produkutu</Link>
+            <Link className="btn-primary" href={'/products/new'}>Pievienot jaunu preci</Link>
             <table className="basic mt-3">
                 <thead>
                     <tr>
-                        <td>Produkta nosaukums</td>
+                        <td>Preces nosaukums</td>
                         <td></td>
                     </tr>
                 </thead>
