@@ -4,6 +4,7 @@ import fs from 'fs';
 import mime from 'mime-types';
 import { mongooseConnect } from '@/lib/mongoose';
 const bucketName = 'ecomexam';
+import { authOptions, isAdminRequest } from "@/pages/api/auth/[...nextauth]";
 
 export default async function handle(req,res) {
     await mongooseConnect();
