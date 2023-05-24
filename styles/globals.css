@@ -29,6 +29,10 @@ table.basic{
 table.basic thead tr td{
     @apply text-lg text-gray-600 uppercase border-b border-gray-600 px-4 py-2;
 }
+table.basic thead tr th {
+    @apply text-lg text-gray-600 uppercase border-b border-gray-600 px-4 py-2 text-center;
+}
+
 table.basic tr td{
     @apply px-4 py-1;
 }
