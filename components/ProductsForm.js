@@ -26,10 +26,13 @@ export default function ProductsForm({
     const [goToProducts, setGoToProducts] = useState(false);
     const [isUploading, setIsUploading] = useState(false);
     const [categories,setCategories] = useState([]);
+    const [categoriesLoading, setCategoriesLoading] = useState(false);
     const router = useRouter();
     useEffect(() => {
+        setCategoriesLoading(true);
         axios.get('/api/categories').then(result => {
             setCategories(result.data);
+            setCategoriesLoading(false);
         })
     }, [])
     async function saveProduct(ev){
@@ -104,6 +107,9 @@ export default function ProductsForm({
             <option value={c._id}>{c.name}</option>
           ))}
             </select>
+            {categoriesLoading && (
+                <Spinner/>
+            )}
             {propertiesToFill.length > 0 && propertiesToFill.map(p => (
                 <div className="">
                     <label>{p.name}</label>
