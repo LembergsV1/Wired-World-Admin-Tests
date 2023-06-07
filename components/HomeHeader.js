@@ -15,7 +15,7 @@ export default function HomeHeader(){
             </div>
           </h2>
           <div className="hidden sm:block">
-            <div className="bg-red-200 flex gap-1 text-black rounded-lg overflow-hidden">
+            <div className="bg-green-200 flex gap-1 text-black rounded-lg overflow-hidden">
             <img src={session.user.image} alt="" className="w-8 h-8"/>
             <span className="py-1 px-2">
               {session.user.name}

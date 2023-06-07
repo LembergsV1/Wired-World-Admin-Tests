@@ -2,10 +2,10 @@
     @apply grid grid-cols-1 sm:grid-cols-3 gap-4;
 }
 .tile{
-    @apply bg-white shadow-md p-2 text-orange-900 text-center;
+    @apply bg-white shadow-md p-2 text-green-900 text-center;
 }
 .tile-header{
-    @apply uppercase text-orange-500 font-bold text-xs text-center m-0;
+    @apply uppercase text-green-500 font-bold text-xs text-center m-0;
 }
 .tile-number{
     @apply text-3xl text-center mt-1 font-bold;
